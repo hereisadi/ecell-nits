@@ -1,0 +1,101 @@
+.apply-container{
+    height: 95vh;
+    width: 100%;
+    background-color: var(--color-1-100);
+}
+.img-apply img{
+    margin: 14vh 0 1vh 0vh;
+    width: 15.625rem;
+}
+.apply-container a{
+    margin-top: 3vh;
+    padding: 0.9375rem 1.25rem;
+    width: 70%;
+    display: inline-block;
+    background-color: var(--color-4-100);
+    color: var(--color-5-100);
+    font-weight: 900;
+    line-height: 1.6;
+    border-radius: 1.875rem;
+    font-size:1.1875rem;
+    font-variant: small-caps;
+}
+.apply-container a:hover{
+    
+    color: black;
+    font-weight: 900;
+    background-color: var(--color-6-100);
+    transition: 0.3s ease-out;
+}
+
+.apply-container a:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem #e2564f;
+    transition: 0.5s;
+  }
+.apply-container a:active
+          {
+              box-shadow: 1px 1px 1px 1px #e2564f;
+              transform: translateY(2px);
+          } 
+
+
+@media only screen and (max-width: 1000px){
+    .img-apply img{
+        width: 8.75rem;
+        margin-top: 13vh !important;
+    }
+    .apply-container{
+        height: 75vh;
+    }
+    .apply-container a{
+        width: 90%;
+        font-size: 0.875rem;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        margin-top: 2vh !important;
+    }
+}
+
+
+@media only screen and (min-device-width: 1001px) and (max-device-width: 1025px){
+            .img-apply img{
+                width: 9.375rem;
+                padding-top: 2.5rem;
+            }
+            .apply-container a{
+                font-size: 0.875rem;
+            }
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1000px){
+    .apply-container{
+        height: 95vh;
+    }
+    .img-apply img{
+        width: 25rem;
+        margin: 7vh 0 1vh 0vh;
+        padding-top: 0.625rem;
+    }
+    .apply-container a{
+        font-size: 1.125rem;
+        margin-top: 4vh !important;
+    }
+}
+
+
+/* For extra small devices */
+@media only screen and (max-width:280px){
+    .img-apply img{
+        width: 9.375rem;
+        margin-top: 10vh;
+        margin-bottom: 0;
+    }
+    .apply-container a{
+        width: 90%;
+        font-size: 0.625rem;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+    }
+}

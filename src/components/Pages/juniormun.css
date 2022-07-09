@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+}
+.event-pic{
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 60vh;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+.event-pic img{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  z-index: -10;
+  min-height: 100%;
+}
+
+.event-title h1 {
+  color: var(--color-1-100);
+  font-weight: 900;
+  font-size: 5.5vh;
+}
+
+.event-title {
+  border-bottom: 0.2vh solid var(--color-1-100);
+  width: 60%;
+  text-align: center;
+  margin: 5vh auto 8vh;
+}
+
+.event-details {
+  margin: 2.2155rem 7.0609375rem 5vh;
+  color: #161c2f;
+  font-size: 2.3vh;
+  line-height: 2;
+  text-align: justify;
+  text-align-last: left;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1000px) {
+  .event-details {
+    margin: 1.6415rem 1.17265625rem 2.345rem;
+    line-height: 1.8;
+    font-size: 1.107rem;
+  }
+
+  .event-pic{
+    height: 50vw;
+  }
+  .event-pic img{
+  max-height: 100%;
+  width: 100%;
+  top: 60%;
+  }
+
+  .event-title {
+    margin-bottom: 3vh;
+  }
+
+  .event-title h1 {
+    font-size: 1.407rem;
+    font-weight: 900;
+  }
+}
+
+@media only screen and (min-device-width: 1000px) and (max-device-width: 1024px){
+  .event-pic{
+    height: 40vw;
+  }
+}
+@media only screen and (max-width:320px){
+  .event-pic{
+    height: 55vw;
+  }
+
+  .event-pic img{
+    top: 65%;
+  }
+
+  .event-details{
+    font-size: 0.8rem;
+  }
+}
+
+.commitees-heading {
+  text-align: center;
+  color: var(--color-1-100);
+  margin-top: 2vh; /* previously 5vh*/
+  font-variant: small-caps;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.junmun-agendas {
+  display: flex;
+  margin-top: 6.9vh;
+  background-color: var(--color-12-100);
+  padding: 2.5rem 0;
+  padding-top: 1rem !important;
+  width: 100%;
+     position: relative;
+     justify-content: center;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+
+.agenda {
+  background-color: var(--color-13-100);
+  border-radius: 1.5625em;
+  margin: 2rem 3.5rem;
+  border: 4px solid #161c2f;
+    width: 40%;
+}
+
+.agenda img {
+  width: 25rem;
+  max-width: 25rem;
+  padding: 0 1.875rem;
+}
+.title01-container {
+  text-align: center;
+  padding: 0 0rem;
+  text-align: center;
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-variant: small-caps;
+}
+.title01-container h2 {
+  font-size: 1.4rem;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.agenda-only {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  font-weight: 900 !important;
+}
+.agendapara-container {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.6;
+  color: white;
+  font-size: 1.1rem;
+  text-align: justify;
+  text-align-last: left;
+  padding: 0 3.125rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 540px) {
+  .commitees-heading {
+    margin-top: 4vh;
+    font-size: 1.2rem;
+  }
+  .junmun-agendas {
+    display: block;
+    justify-content: space-between;
+    margin-top: 2vh;
+    padding:0.8rem 0 2.5rem 0;
+  }
+  .agenda {
+    width: 90%;
+    margin: 1.25em auto 0 auto;
+  }
+  .agenda img{
+    width: 20rem;
+    max-width: 20rem;
+  }
+
+  .title01-container h2 {
+    font-size: 1.2rem;
+  }
+  .title01-container {
+    padding: 0.1875rem 1.4rem;
+  }
+  .agendapara-container {
+    padding: 0 1.875rem 1.25rem 1.875rem;
+    margin-bottom: 0.5rem;
+  }
+  .agendapara-container p {
+    font-size: 0.8em;
+  }
+  .agenda-only {
+    font-size: 0.7em;
+    margin: 0em 0;
+  }
+  .junmun2021 {
+    font-size: 0.6em;
+    padding: 0 0.625rem;
+  }
+}
+.agenda-only {
+  text-align: center;
+  margin: 0.625em 0;
+  color: white;
+}
+
+
+
+
+
+
+@media only screen and (min-device-width: 541px) and (max-device-width: 1279px){
+  .junmun-agendas{
+    margin-top: 3rem !important;
+  }
+
+  .agenda{
+    width: 43%;
+    /* margin: 0 !important; */
+    margin: 2rem 1rem !important;
+  }
+
+  .agenda img{
+    width: 20rem;
+    max-width: 20rem;
+  }
+
+  .title01-container{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .agendapara-container{
+    font-size: 1rem;
+    line-height: 1.6 !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .agenda a{
+    font-size: 0.8rem;
+    width: 80%;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+
+
+
+.container-junmun2021 {
+  padding-bottom: 10px;
+}
+.junmun2021 {
+  text-align: center;
+  padding-top: 0vh; /*4vh */
+  color: var(--color-1-100);
+  font-variant: small-caps;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.images-junmun21 img {
+  width: 350px;
+  margin: 10px 10px;
+  border-radius: 10px;
+}
+.images-junmun21 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .images-junmun21 img {
+    margin: 10px auto;
+    width: 90%;
+  }
+  .junmun2021 {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width:356px){
+  .agenda img{
+    width: 15rem;
+    max-width: 15rem;
+  }
+}
+
+.faq-section{
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+}
+
+.faq-section h1{
+  color: var(--color-1-100);
+}
+@media only screen and (max-width:991px){
+  .faq-section{
+      font-size: 1.2rem;
+      padding: 1.6rem 0 1rem 0;
+  }
+}
+
+.agenda a{
+  color: white;
+  font-size: 1.2rem;
+  background-color: var(--color-1-100);
+  width: 40%;
+  text-align: center;
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+}
+
+.agenda a:hover{
+  background-color: var(--color-6-100);
+  color: var(--color-1-100);
+  font-weight: bolder;
+}
+
+.agenda a:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.25rem #e2564f;
+  transition: 0.5s;
+}
+.agenda a:active
+        {
+            box-shadow: 1px 1px 1px 1px #e2564f;
+            transform: translateY(2px);
+        } 
+
+@media only screen and (max-width:991px){
+  .agenda a{
+    font-size: 1rem;
+    width: 60%;
+    padding: 0.8rem 1.2rem;
+  }
+}
+
+@media only screen and (max-width:356px){
+  .agenda a{
+    font-size: 0.7rem;
+    width: 70%;
+    padding: 0.8rem 1.0rem;
+  }
+}
