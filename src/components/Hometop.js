@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import { Typewriter } from "react-simple-typewriter";
 import TypeWriterEffect from "react-typewriter-effect";
 
+
 const Hometop = () => {
   return (
     <div>
@@ -28,6 +29,12 @@ const Hometop = () => {
           />
         </div>
       </div>
+
+
+
+
+
+
 
       <div className="hometop-apply">
         <div className="hometop-reg">

@@ -1,0 +1,52 @@
+.dotdotload{
+    padding-top: 50vh;
+    height: 100vh;
+    background-color:rgba(250, 247, 241, 0.619);
+  }
+  
+  
+  .loading-8{
+    text-align: center;
+    width: 100%;
+  }
+  
+
+  .loading-8 img{
+    width: 10rem;
+  }
+  .load-main{
+    display: inline-block;
+    margin-right: 15px;
+    color: #ff8b57;
+  }
+  
+  .loading-8 span{
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #ffd957;
+    animation-name: dots;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .loading-8 span:nth-child(2){
+    background-color: #57ffa0;
+    animation-delay: 0.4s;
+  }
+  
+  .loading-8 span:nth-child(3){
+    background-color: #ff8b57;
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes dots {
+    50%{
+      opacity: 0;
+      transform: scale(0.7) translateY(10px);
+    }
+  }
+  

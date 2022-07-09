@@ -44,15 +44,15 @@ const Navbarmenu = () => {
         <div className="row">
           <div className="header__middle__logo">
             <NavLink exact activeClassName="is-active" to="/">
-              <img
+              {/* <img
                 className="img-left0"
                 src="./Images/nitsmun.png"
                 alt="Nitsmun-logo"
-              />
+              /> */}
               <img
                 className="img-left"
-                src="./Images/logo-name-nitsmun.svg"
-                alt="Nitsmun-logo"
+                src="./img/ecell-logo.svg"
+                alt="Ecell-logo"
               />
             </NavLink>
           </div>
@@ -110,13 +110,13 @@ const Navbarmenu = () => {
                       <NavLink
                         onClick={toggleClass}
                         activeClassName="is-active"
-                        to={`/nitsmun2022`}
+                        to={`/srijan`}
                       >
                         {" "}
-                        NITSMUN 2022{" "}
+                        Srijan{" "}
                       </NavLink>{" "}
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink
                         onClick={toggleClass}
                         activeClassName="is-active"
@@ -124,7 +124,7 @@ const Navbarmenu = () => {
                       >
                         Junior MUN{" "}
                       </NavLink>{" "}
-                    </li>
+                    </li> */}
 
                     {/* <li>
                       <NavLink
@@ -143,10 +143,10 @@ const Navbarmenu = () => {
                   <NavLink
                     onClick={toggleClass}
                     activeClassName="is-active"
-                    to={`/about`}
+                    to={`/team`}
                   >
                     {" "}
-                    About Us{" "}
+                    Our Team{" "}
                   </NavLink>{" "}
                 </li>
 
@@ -154,23 +154,25 @@ const Navbarmenu = () => {
                   <NavLink
                     onClick={toggleClass}
                     activeClassName="is-active"
-                    to={`/team`}
+                    to={`/about`}
                   >
                     {" "}
-                    Our Team{" "}
+                    About Us{" "}
                   </NavLink>{" "}
                 </li>
+
+                
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}
                     activeClassName="is-active"
-                    to={`/articles`}
+                    to={`/contact`}
                   >
                     {" "}
-                    Articles{" "}
+                    Contact Us{" "}
                   </NavLink>{" "}
                 </li>
-                <li className="menu-item ">
+                {/* <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}
                     activeClassName="is-active"
@@ -179,7 +181,7 @@ const Navbarmenu = () => {
                     {" "}
                     Apply Now!{" "}
                   </NavLink>{" "}
-                </li>
+                </li> */}
               </ul>
             </nav>
           </div>
