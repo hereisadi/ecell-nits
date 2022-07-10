@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, {useEffect} from "react";
 import "./Footer.css";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";

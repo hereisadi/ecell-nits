@@ -20,13 +20,13 @@ const Team = () => {
 }, []);
   return (
     <>
-      <div data-aos="fade-up" className="team-head0">
+      <div data-aos="fade-up" data-aos-duration="500" className="team-head0">
         <h1 className="team-head-h1">Secretariat</h1>
       </div>
-      <div data-aos="fade-up" className="team-stats-card">
+      <div data-aos="fade-up" data-aos-duration="500" className="team-stats-card">
         {Secretariat.map((item) => {
           return (
-            <div data-aos="flip-left" key={item.id} className="team-stats">
+            <div data-aos="flip-left" data-aos-duration="500" key={item.id} className="team-stats">
               <div>
                 <center>
                   <img

@@ -12,17 +12,17 @@ const Teamjr = () => {
 }, []);
   return (
     <>
-      <div data-aos="fade-up" className="team-stats-card1">
+      <div data-aos="fade-up" data-aos-duration="500" className="team-stats-card1">
         {Secretariatjr.map((item) => {
           return (
-            <div data-aos="fade-left" key={item.id} className="team-stats1">
-              <div data-aos="flip-left">
+            <div data-aos="fade-up" data-aos-duration="500"  key={item.id} className="team-stats1">
+              <div data-aos="fade-up" data-aos-duration="500">
                 <center>
                   <img className="team-img1" src={item.imgsrc} alt="" />
                 </center>
               </div>
 
-              <div data-aos="fade-right" className="social-media">
+              <div data-aos="fade-down" data-aos-duration="500" className="social-media">
                 <a href={item.mail}>
                   <button className="btn-icon1">
                     <HiOutlineMail className="icon-color" size={30} />
