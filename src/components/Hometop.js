@@ -1,40 +1,28 @@
 import React from "react";
 import "./Hometop.css";
 import { Link } from "react-router-dom";
-// import { Typewriter } from "react-simple-typewriter";
-import TypeWriterEffect from "react-typewriter-effect";
+import Breaking2 from "./Pages/Breaking2";
+
+
+
+
+
 
 
 const Hometop = () => {
+  // const [loading2, setLoading2] = useState(false);
+  // useEffect(() => {
+  //   setLoading2(true);
+  //   setTimeout(() => {
+  //     setLoading2(false);
+  //   }, 50000);
+  // }, []);
+
   return (
     <div>
       <div className="hometop-main">
-        <div className="home-text-rec">
-          <TypeWriterEffect
-            textStyle={{
-              fontFamily: "Anton",
-              color: "#3F3D56",
-            }}
-            startDelay={1000}
-            cursorColor="#3F3D56"
-            multiText={[
-              "Welcome To Entrepreneurship Cell Nit Silchar!",
-              "Virtue Self-Dependency Willingness!",
-              "A Unique Initiative by NIT Silchar!",
-              "For the students, By the students!",
-            ]}
-            loop={true}
-            nextTextDelay={1000}
-            typeSpeed={150}
-          />
-        </div>
+        <Breaking2 />
       </div>
-
-
-
-
-
-
 
       <div className="hometop-apply">
         <div className="hometop-reg">
