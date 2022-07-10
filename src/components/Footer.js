@@ -1,22 +1,22 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Footer.css";
 import { FaYoutube } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
-// import { HiOutlineMail } from "react-icons/hi";
 import { GoLocation } from "react-icons/go";
 import { BsTelephone } from "react-icons/bs";
-// import styled from "styled-components";
 import { IconContext } from "react-icons";
 import {SiGmail} from "react-icons/si"
-// import { Link, Route, Switch} from "react-router-dom";
-
-// import { Link } from 'react-router-dom';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+}, []);
   return (
-    <div className="Footer-main">
+    <div data-aos="fade-down" data-aos-duration="500" className="Footer-main">
       <div className="footer-icon">
         <button className="footer-btn-a"><a
           className="footer-anchor"

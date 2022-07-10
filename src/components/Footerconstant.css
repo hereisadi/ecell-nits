@@ -6,6 +6,7 @@
     justify-content: space-between;
     left: 1%;
     animation: uptodown1 0.5s alternate ease infinite;
+    z-index: 10;
 }
 
 .footer-c:hover{
@@ -72,6 +73,7 @@ color: var(--color-15-100);
     top: 63.5%;
     right: -3rem;
     transform: rotate(90deg);
+    z-index: 10;
 }
 
 @media only screen and (max-width:660px){

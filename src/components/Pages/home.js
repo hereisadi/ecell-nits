@@ -14,6 +14,7 @@ const Home = () => {
       <div data-aos="fade-up">
         <Hometop />
       </div>
+      
     </>
   );
 };
