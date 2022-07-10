@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import Loading from "./components/Loading";
-
+import Footerconstant from "./components/Footerconstant";
 // import home from "./components/Pages/home";
 // import about from "./components/Pages/about";
 // import srijan from "./components/Pages/srijan";
@@ -45,6 +45,7 @@ function App() {
             </Switch>
           </Scrolling>
           <ScrollToTop />
+          <Footerconstant />
           <Footer />
         </Suspense>
       </Router>

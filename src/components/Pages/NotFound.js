@@ -7,7 +7,7 @@ const NotFound = () => {
   return (
     <>
       <div className="not-found">
-        <div className="no-existence" data-text="GLITCHEFFECT">
+        <div className="no-existence">
           <h1 className="no-existence1"> 404</h1>
         </div>
 

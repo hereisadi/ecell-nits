@@ -3,16 +3,13 @@
     bottom: 0;
 }
 .footer-icon{
-
-    /* background-color: #1da393; */
     background-color: var(--color-9-100);
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 2.5em; */
-    /* padding-top: 3px;
-    padding-bottom: px;*/
+    
 } 
+
 .footer-below{
     justify-content: center;
     max-width: 100%;

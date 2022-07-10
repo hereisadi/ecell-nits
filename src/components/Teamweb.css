@@ -125,7 +125,6 @@
 .btn-icon2, .btn-icon3, .btn-icon1, .btn-icon4{
     display: flex;
     justify-content: center;
-    /* background-color: #a2d66271; */
     background-color: white;
     align-items: center;
     margin: 0.1875rem 0.4375rem;

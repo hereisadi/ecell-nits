@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./team.css";
 import { Secretariat } from "./Dataset";
 import Teamjr from "./Teamjr";
@@ -11,17 +11,22 @@ import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa";
 import Underline2 from "./Underline2";
 import { TabTitle } from "./Utils/Genfn";
-const team = () => {
+import Aos from "aos";
+import "aos/dist/aos.css";
+const Team = () => {
   TabTitle("NITSMUN Team | NITS MUN");
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+}, []);
   return (
     <>
-      <div className="team-head0">
+      <div data-aos="fade-up" className="team-head0">
         <h1 className="team-head-h1">Secretariat</h1>
       </div>
-      <div className="team-stats-card">
+      <div data-aos="fade-up" className="team-stats-card">
         {Secretariat.map((item) => {
           return (
-            <div key={item.id} className="team-stats">
+            <div data-aos="flip-left" key={item.id} className="team-stats">
               <div>
                 <center>
                   <img
@@ -67,4 +72,4 @@ const team = () => {
     </>
   );
 };
-export default team;
+export default Team;

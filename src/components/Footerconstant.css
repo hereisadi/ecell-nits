@@ -1,0 +1,132 @@
+.footer-c{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 50%;
+    justify-content: space-between;
+    left: 1%;
+    animation: uptodown1 0.5s alternate ease infinite;
+}
+
+.footer-c:hover{
+    animation-play-state: paused;
+}
+
+.fa-btn, .li-btn, .ig-btn{
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.fa-icon, .li-icon, .ig-icon{
+color: var(--color-15-100);
+}
+
+
+.fa-icon:hover{
+    color: #4267B2;
+    transition: 0.15s ease-in-out;
+}
+
+.li-icon:hover{
+    color: #0072b1;
+    transition: 0.15s ease-in-out;
+}
+
+.ig-icon:hover{
+    color: #fb3958;
+    transition: 0.15s ease-in-out;
+}
+
+@media only screen and (max-width:660px){
+
+    .footer-c{
+        top: 65%;
+    }
+
+    .fa-btn, .li-btn, .ig-btn{
+        margin-top: 0.5rem;
+        margin-left: 0.8rem;
+    }
+
+    .fa-icon{
+        width: 1rem;
+    }
+
+    .ig-icon{
+        width: 1.5rem;
+    }
+
+    .li-icon{
+        width: 1.4rem;
+    }
+}
+
+
+
+.register-c{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 63.5%;
+    right: -3rem;
+    transform: rotate(90deg);
+}
+
+@media only screen and (max-width:660px){
+    .register-c{
+        top: 77%;
+        right: -4rem;
+    }
+}
+
+.reg-c-text{
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: var(--font3);
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    animation: animate 4.5s linear infinite, uptodown2 0.5s alternate ease infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+}
+
+@media only screen and (max-width:660px){
+    .reg-c-text{
+        font-size: 1.6rem;
+    }
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 100%;
+    }
+    50%{
+        background-position: 100% 0;
+    }
+    100%{
+        background-position: 0 100%;
+    }
+}
+
+@keyframes uptodown1 {
+    from{
+        transform: translateY(3px);
+    }
+    to{
+        transform: translateY(-3px)
+    }
+}
+
+@keyframes uptodown2 {
+    from{
+        transform: translateX(3px);
+    }
+    to{
+        transform: translateX(-3px)
+    }
+}
+
