@@ -1,12 +1,17 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./NotFound.css";
 import { TabTitle } from "../Utils/Genfn";
+import Aos from "aos";
+import "aos/dist/aos.css";
 const NotFound = () => {
   TabTitle("404 Not Found");
+  useEffect(() => {
+    Aos.init({ duration: 2000});
+}, []);
   return (
     <>
-      <div className="not-found">
+      <div data-aos="fade-down" data-aos-duration="1500" className="not-found">
         <div className="no-existence">
           <h1 className="no-existence1"> 404</h1>
         </div>
