@@ -45,7 +45,7 @@ useEffect(() => {
       </div>
 
       <div className="register-c">
-            <h1 className="reg-c-text" >Scroll down</h1>
+            <a href="https://www.facebook.com/ecell.nit.silchar/" rel="noreferrer" target="_blank"><h1 className="reg-c-text" >Register Now</h1></a>
       </div>
     </>
   );

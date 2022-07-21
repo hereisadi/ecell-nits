@@ -1,7 +1,7 @@
 .dotdotload{
     padding-top: 40vh;
     height: 100vh;
-    background-color:#161c2f;
+    background-color:var(--color-20-100);
   }
   
   

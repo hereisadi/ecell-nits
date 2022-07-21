@@ -1,7 +1,7 @@
 import React from "react";
 import "./Hometop.css";
 import Breaking2 from "./Pages/Breaking2";
-import Aos from "aos";
+// import Aos from "aos";
 import "aos/dist/aos.css";
 const Hometop = () => {
   // const [loading2, setLoading2] = useState(false);

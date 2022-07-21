@@ -3,67 +3,46 @@ import "./about.css";
 import Underline from "../Underline";
 import { TabTitle } from "../Utils/Genfn";
 const about = () => {
-  TabTitle("About | NITS MUN");
+  TabTitle("About | ECELL");
   return (
-    <div className="about-main">
-      <div className="about-header">
-        <ul className="about-headertxt">ABOUT US</ul>
+    <>
+      <div className="about-main">
+        <div className="about-header">
+          <ul className="about-headertxt">ABOUT US</ul>
+        </div>
+        <Underline />
+        <div className="about-main-c">
+          <img data-aos="fade-left" src="./img/about-us2.png" alt="About-Us" />
+          <h1 data-aos="fade-right">
+            A great man once said “Don’t worry about being successful but work
+            towards being significant and the success will naturally follow”.
+            We, here at E-Cell NIT Silchar, stand by this and labour to foster
+            and motivate an entrepreneurial environment among the students at
+            campus. We push and promote the urge to create ideas and ventures
+            that will be tomorrow’s reality.
+          </h1>
+        </div>
       </div>
-      <Underline/>
-      <div className="about-content1">
-        <ul className="contentpara1">
-          NITSMUN was founded in 2014 when a group of like-minded people wanted
-          to create a society for younger people to discuss, debate, and
-          deliberate present-day crises whilst experiencing themselves being in
-          the shoes of various world leaders. Ever since the first MUN session
-          in 2014, our society has grown manifold with more enthusiastic people
-          joining in and helping us emerge as one the best and most promising
-          MUN societies in NE India. Our conference offers its delegates an
-          unrivaled Model UN experience by running highly personalized,
-          engaging, and dynamic committees.
-        </ul>
-        <ul className="contentpara2">
-          Besides having participated in various MUNs in and around the country
-          and bringing home numerous accolades and valuable experience, we have
-          also hosted MUNs every single year since, with multiple mock sessions
-          and collaborative conferences with world-class universities, with
-          awe-inspiring members of the EB training and guiding us to think
-          rationally, act quickly and solve modern-day problems and at the same
-          time also provide us with the support required. NITSMUN aims at
-          polishing the interpersonal, debating, and deliberating skills of the
-          participants and mold them into a leader of tomorrow.
-        </ul>
-      </div> 
-      <div className="about-headertxt2">
-        <h1>Our Vision</h1>
+
+      <div className="timeline-o">
+        <h1>Timeline</h1>
+        <div className="time-1">
+          <img src="./img/new_orientation.png" alt="Orientation" />
+        </div>
+        <div className="time-2">
+          <img src="./img/Website-Srijan.png" alt="Srijan" />
+        </div>
+        <div className="time-3">
+          <img
+            src="./img/Website-TecnoEmpressario-01.png"
+            alt="TecnoEmpressario"
+          />
+        </div>
+        <div className="time-4">
+          <img src="./img/incubation_new.png" alt="Incubation-new" />
+        </div>
       </div>
-      <Underline />
-      <div className="about-content2">
-        <ul className="content-para3">
-          NITSMUN aspires to involve youth in international dialogue, deliberate
-          upon the dire issues of the world and shape them into strong
-          individuals who'll become the leaders of tomorrow.
-        </ul>
-      </div>
-      <div className="about-headertxt2">
-        <h1>What is a Model UN?</h1>
-      </div>
-      <Underline />
-      <div className="about-content2">
-        <ul className="content-para4">
-          A Model United Nations is an academic simulation of the United
-          Nations. Students act as delegates and discuss real-world problems.
-          These simulations are conducted by various universities, colleges, and
-          schools to elevate the debating, presentation, oratory, deliberative
-          skills of students and acquaint them with the pressing ongoing
-          problems in the world and give them an opportunity to brainstorm and
-          try finding solutions to them, whilst keeping in mind their foreign
-          policies. Every conference has different committees and each committee
-          discourses upon a certain agenda and tries to find fixes and solutions
-          to the problems.
-        </ul>
-      </div>
-    </div>
+    </>
   );
 };
 

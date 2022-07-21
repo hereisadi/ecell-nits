@@ -6,7 +6,7 @@
     top: 0;
 	margin-right:auto;
 	margin-left:auto;
-  background-color: var(--color-1-100);
+  background-color: var(--color-20-100);
   transition: 0.25s;
    position: fixed;
    z-index: 100000000000;
@@ -14,7 +14,8 @@
 }
 
 .container-bg{
-  background-color: var(--color-1-080);
+  background-color: #45363c;
+  /* background-color: #360940; */
   transition:  0.25s;
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
-import { FiChevronDown } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
+// import { FiChevronDown } from "react-icons/fi";
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./Navbar.css";
@@ -44,11 +44,6 @@ const Navbarmenu = () => {
         <div className="row">
           <div className="header__middle__logo">
             <NavLink exact activeClassName="is-active" to="/">
-              {/* <img
-                className="img-left0"
-                src="./Images/nitsmun.png"
-                alt="Nitsmun-logo"
-              /> */}
               <img
                 className="img-left"
                 src="./img/ecell-logo.svg"
@@ -58,7 +53,6 @@ const Navbarmenu = () => {
           </div>
           <div className="header__middle__menus">
             <nav className="main-nav ">
-              {/* Responsive Menu Button */}
               {isResponsiveclose === true ? (
                 <>
                   <span
@@ -94,7 +88,7 @@ const Navbarmenu = () => {
                     Home{" "}
                   </NavLink>
                 </li>
-
+{/* 
                 <li
                   onClick={toggleSubmenu}
                   className="menu-item sub__menus__arrows"
@@ -116,27 +110,17 @@ const Navbarmenu = () => {
                         Srijan{" "}
                       </NavLink>{" "}
                     </li>
-                    {/* <li>
-                      <NavLink
-                        onClick={toggleClass}
-                        activeClassName="is-active"
-                        to={`/junior_mun`}
-                      >
-                        Junior MUN{" "}
-                      </NavLink>{" "}
-                    </li> */}
-
-                    {/* <li>
-                      <NavLink
-                        onClick={toggleClass}
-                        activeClassName="is-active"
-                        to={`/mock_mun`}
-                      >
-                        Mock MUNs{" "}
-                      </NavLink>{" "}
-                    </li> */}
-
                   </ul>
+                </li> */}
+                <li className="menu-item ">
+                  <NavLink
+                    onClick={toggleClass}
+                    activeClassName="is-active"
+                    to={`/gallery`}
+                  >
+                    {" "}
+                    Gallery{" "}
+                  </NavLink>{" "}
                 </li>
 
                 <li className="menu-item ">
@@ -161,7 +145,6 @@ const Navbarmenu = () => {
                   </NavLink>{" "}
                 </li>
 
-                
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}

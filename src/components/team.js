@@ -1,75 +1,75 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "./team.css";
-import { Secretariat } from "./Dataset";
-import Teamjr from "./Teamjr";
-import Underline from "./Underline";
-import Teammediajr from "./Teammediajr";
-import Teamresearchjr from "./Teamresearchjr";
-import Teampr from "./Teampr";
-import Teamweb from "./Teamweb";
-import { HiOutlineMail } from "react-icons/hi";
-import { FaLinkedinIn } from "react-icons/fa";
-import Underline2 from "./Underline2";
+import { alumni } from "./Dataset";
+import { facultycont } from "./Dataset";
 import { TabTitle } from "./Utils/Genfn";
+import { BsChevronDown } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Teamweb from "./Teamweb";
+
 const Team = () => {
-  TabTitle("NITSMUN Team | NITS MUN");
+  TabTitle("ECELL Team | ECELL");
   useEffect(() => {
-    Aos.init({ duration: 2000});
-}, []);
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
-      <div data-aos="fade-up" data-aos-duration="500" className="team-head0">
-        <h1 className="team-head-h1">Secretariat</h1>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="500" className="team-stats-card">
-        {Secretariat.map((item) => {
+      <div data-aos="fade-up" data-aos-duration="2500" className="team-main">
+      
+        {alumni.map((item) => {
           return (
-            <div data-aos="flip-left" data-aos-duration="500" key={item.id} className="team-stats">
-              <div>
-                <center>
-                  <img
-                    className="team-img"
-                    src={item.imgsrc}
-                    alt=""
-                    onContextMenu="return flase;"
-                  />
-                </center>
+            <div key={item.id} className="alumni-cont">
+              <div className="img-holder-cont">
+                <img src={item.img} alt={item.alt} />
               </div>
-
-              <div className="social-media">
-                <a href={item.mail}>
-                  <button className="btn-icon1">
-                    <HiOutlineMail className="icon-color" size={30} />
-                  </button>
-                </a>
-
-                <a href={item.linkedin} rel="noreferrer" target="_blank">
-                  <button className="btn-icon2">
-                    <FaLinkedinIn className="icon-color1" size={25} />
-                  </button>
-                </a>
-
-                <a href={item.fb} rel="noreferrer" target="_blank">
-                  {item.icon0}
-                </a>
-              </div>
-
-              <h1>{item.name}</h1>
-              <Underline2 />
-              <h2 className="team-posting-sec">{item.post}</h2>
             </div>
           );
         })}
       </div>
-      <Underline />
-      <Teamjr />
-      <Teammediajr />
-      <Teamresearchjr />
-      <Teampr />
+
+      <div data-aos="fade-up" data-aos-duration="2500" className="team-head">
+        <h1>THE TEAM</h1>
+        <h2>E-CELL NIT SILCHAR</h2> 
+       
+        <center>
+          <h2>2021-22</h2>
+        </center>{" "}
+        <br />
+        <center>
+          {" "}
+          <strong>
+            <BsChevronDown className="chevron-down-icon" size={45} />{" "}
+          </strong>
+        </center>
+      </div>
+
+      <div className="team-meet">
+        <h1>MEET OUR TEAM</h1>
+      </div>
+
+      <div data-aos="fade-down" data-aos-duration="2500" className="team-head5">
+        <h1 className="team-head-h1">Faculty Members</h1>
+      </div>
+      <div className="faculty-cont">
+     
+        {facultycont.map((item) => {
+          return (
+            <div data-aos="fade-up" data-aos-duration="3000" key={item.id} className="faculty-img-holder">
+              <img src={item.img} alt={item.alt} />
+              <center>
+                <h1>{item.alt}</h1>
+              </center>
+              <center>
+                <h2>{item.post}</h2>
+              </center>
+            </div>
+          );
+        })}
+      </div>
       <Teamweb />
     </>
   );
 };
+
 export default Team;

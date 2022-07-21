@@ -21,7 +21,7 @@
 }
 
 .fa-icon, .li-icon, .ig-icon{
-color: var(--color-15-100);
+color: var(--color-20-100);
 }
 
 
@@ -96,9 +96,13 @@ color: var(--color-15-100);
     background-size: 500%;
 }
 
+.reg-c-text:hover{
+    animation-play-state: paused;
+}
+
 @media only screen and (max-width:660px){
     .reg-c-text{
-        font-size: 1.6rem;
+        font-size: 1.25rem;
     }
 }
 

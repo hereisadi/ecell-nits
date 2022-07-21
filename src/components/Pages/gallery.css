@@ -1,0 +1,62 @@
+.gallerytop-main{
+    position: relative;
+    margin-top: 1.25rem;
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./Bg_gallerY.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(245, 89, 89);
+    padding-bottom: 0;
+    height: 101vh;
+    background-attachment: fixed;
+    opacity:1;
+  }
+
+.home-ga-txt h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home-ph{
+    position: absolute;
+    top: 30%;
+    font-size: 95px;
+    margin-left: 20vh;
+}
+
+.home-ga{
+    position: absolute;
+    top: 40%;
+    font-size: 140.04px;
+    margin-top: 5vh;
+    margin-left: 20vh;
+}
+
+@media only screen and (max-width:660px){
+    .home-ph{
+        font-size: 45px;
+        margin-left: 4vh;
+    }
+
+    .home-ga{
+        font-size: 60px;
+        margin-top: 0vh;
+        margin-left: 4vh;
+    }
+}
+
+@media only screen and (max-width:320px){
+            .home-ph{
+                font-size: 45px;
+                margin-left: 2vh;
+            }
+            
+            .home-ga{
+                font-size: 49px;
+                margin-left: 2vh;
+                margin-top: 0 !important;
+            }
+}

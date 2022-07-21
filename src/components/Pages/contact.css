@@ -1,0 +1,110 @@
+.contact-top {
+  position: relative;
+  margin-top: 1.25rem;
+  padding-top: 5rem;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./boat.png");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(245, 89, 89);
+  padding-bottom: 0;
+  height: 101vh;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+.contact-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-3-100);
+}
+
+.contact-txt h1{
+    font-size: 6rem;
+    font-family: var(--font5);
+    font-variant: small-caps;
+}
+
+@media only screen and (max-width:660px){
+    .contact-txt h1{
+        font-size: 3rem;
+       
+    }
+}
+
+.contact-main{
+    text-align: center;
+    padding: 7rem 0;
+    color: #808080;
+    font-size: 1.2rem;
+}
+
+.company-vi{
+    margin-top: 4vh;
+    justify-content: center;
+    width: 97.5%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 2rem 0 4rem
+}
+
+.company-img img{
+    height: 150px;
+    width: 150px;
+    margin: 1.2rem;
+}
+
+@media only screen and (max-width:660px){
+    .contact-main {
+        padding: 2.5rem 2rem;
+    }
+
+    .contact-main h1{
+        font-size: 1.2rem;
+    }
+
+    .company-vi{
+        padding: 1vw 0;
+    }
+
+    .company-img img{
+        height: 90px;
+        width: 90px;
+        margin: 1.2rem;
+    }
+}
+
+.contact-links{
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #0b013e;
+}
+
+.contact-links h1{
+    color: #f7df07;
+    font-family: var(--font5);
+    font-variant: small-caps;
+    font-weight: 900;
+    color: transparent;
+    background-image: linear-gradient(to left, #2ecc71, #3498db, #9b59b6, #f39c12);
+    -webkit-background-clip: text;
+    animation: animate 4.5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+}
+
+@media only screen and (max-width:660px){
+    .contact-links h1{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .contact-links h1{
+        font-size: 0.7rem;
+    }
+}
