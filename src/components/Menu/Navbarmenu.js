@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-// import { FiChevronDown } from "react-icons/fi";
 import { ImCross } from "react-icons/im";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./Navbar.css";
@@ -88,30 +87,7 @@ const Navbarmenu = () => {
                     Home{" "}
                   </NavLink>
                 </li>
-{/* 
-                <li
-                  onClick={toggleSubmenu}
-                  className="menu-item sub__menus__arrows"
-                >
-                  {" "}
-                  <Link to="#">
-                    {" "}
-                    Events <FiChevronDown />{" "}
-                  </Link>
-                  <ul className={boxClassSubMenu.join(" ")}>
-                    <li>
-                      {" "}
-                      <NavLink
-                        onClick={toggleClass}
-                        activeClassName="is-active"
-                        to={`/srijan`}
-                      >
-                        {" "}
-                        Srijan{" "}
-                      </NavLink>{" "}
-                    </li>
-                  </ul>
-                </li> */}
+
                 <li className="menu-item ">
                   <NavLink
                     onClick={toggleClass}
@@ -155,16 +131,6 @@ const Navbarmenu = () => {
                     Contact Us{" "}
                   </NavLink>{" "}
                 </li>
-                {/* <li className="menu-item ">
-                  <NavLink
-                    onClick={toggleClass}
-                    activeClassName="is-active"
-                    to={`/apply`}
-                  >
-                    {" "}
-                    Apply Now!{" "}
-                  </NavLink>{" "}
-                </li> */}
               </ul>
             </nav>
           </div>

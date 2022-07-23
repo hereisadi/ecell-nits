@@ -1,7 +1,6 @@
 .about-main{
     padding-top: 60px;
     background-color: var(--color-17-100);
-    /* background-color: #0B013E; */
 }
 
 .about-header{
@@ -17,102 +16,17 @@
     color: var(--color-20-100);
 }
 
-
-.about-content1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 3em 3em;
-    text-align: justify;
-    line-height: 1.6;
-    font-weight: 600;
-}
-.about-content1 ul{
-    color: black;
-    font-size: 1.1rem;
-    padding-bottom: 01.5rem;
-    line-height: 1.6;
-}
-.about-headertxt2{
-    display: flex;
-    justify-content: center;
-}
-.about-headertxt2 h1 {
-    font-size: 2.7em;
-    color: var(--color-1-100);
-    font-variant: small-caps;
-}
-.about-content2 {
-    display: flex;
-    justify-content: center;
-    padding-top: 1em;
-    padding-bottom: 2em;
-}
-.content-para3{
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-weight: 600;
-    padding-left: 5em;
-    padding-right: 5em;
-    text-align: center;
-    /* color: rgb(62, 53, 51); */
-    /* color: rgb(144, 123, 123);
-     */
-     color: black;
-
-}
-.content-para4{
-    font-size: 1.1rem;
-    line-height: 1.6;
-    font-weight: 600;
-    padding-left: 5em;
-    padding-right: 5em;
-    text-align: justify;
-    padding-bottom: 1em;
-    /* color: rgb(62, 53, 51); */
-    /* color: rgb(144, 123, 123); */
-    color: black;
-
-}
 @media only screen and (max-width : 981px){
     .about-main{
         padding-top: 3.3125rem;
     }
-    .about-content1 {
-        padding-left: 2.4em;
-        padding-right: 2.4em;
-    }
-    .content-para3,.content-para4{
-        padding-left: 2.4em;
-        padding-right: 2.4em;
-    }
 }
+
 @media only screen and (max-width : 650px){
-    
-    .about-content1 {
-        padding: 2em 3em;;
-        padding-left: 1em;
-        padding-right: 1em;
-    }
-    .content-para3,.content-para4{
-        padding-left: 1em;
-        padding-right: 1em;
-        text-align: justify;
-    }
-    .about-headertxt2 h1 {
-        font-size: 2em;
-    }
     .about-headertxt{
         font-size: 1.741rem;
     }
 }
-
-
-
-
-
-
-
 
 .about-main-c{
     margin: 5rem 7rem 4rem 8rem;
@@ -177,8 +91,6 @@
     margin-top: 1rem;
 }
 
-
-
 .time-1 img, .time-2 img, .time-4 img, .time-3 img{
     height: 19rem;
     width: 19rem;
@@ -223,7 +135,6 @@
         transform: scale(0.9);
     }
 }
-
 
 .onhover-dis{
     position: absolute;

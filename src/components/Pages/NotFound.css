@@ -56,13 +56,15 @@
     font-size: 4vh;
     padding-top: 4vh;
 }
+
 .not-found-text{
     text-align: center;
     margin-top: 5vh;
 }
+
 .notfound-tohome{
-    text-align: center;
-    margin-top: 4vh;
+    /* text-align: center; */
+    margin-top: 4vh !important;
 }
 
 .notfound-tohome p{
@@ -83,9 +85,7 @@
 .to-home{
     font-size: 25px;
 }
-/* .tohome:hover{
-        color: whitesmoke;
-} */
+
 @media (max-width:992px){
     .not-found-text h1{
         padding: 0 1.875rem;
@@ -119,6 +119,7 @@
     font-weight: 600;
     font-size: 1.25rem;
 }
+
 .notfound-tohome:hover{
     background-color: rgba(112, 183, 213, 0.386);
     transition: 0.3s ease-in;

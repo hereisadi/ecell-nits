@@ -6,7 +6,7 @@ import { TabTitle } from "./Utils/Genfn";
 import { BsChevronDown } from "react-icons/bs";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Teamweb from "./Teamweb";
+import Teammem from "./Teammem";
 
 const Team = () => {
   TabTitle("ECELL Team | ECELL");
@@ -16,7 +16,6 @@ const Team = () => {
   return (
     <>
       <div data-aos="fade-up" data-aos-duration="2500" className="team-main">
-      
         {alumni.map((item) => {
           return (
             <div key={item.id} className="alumni-cont">
@@ -30,8 +29,7 @@ const Team = () => {
 
       <div data-aos="fade-up" data-aos-duration="2500" className="team-head">
         <h1>THE TEAM</h1>
-        <h2>E-CELL NIT SILCHAR</h2> 
-       
+        <h2>E-CELL NIT SILCHAR</h2>
         <center>
           <h2>2021-22</h2>
         </center>{" "}
@@ -52,10 +50,14 @@ const Team = () => {
         <h1 className="team-head-h1">Faculty Members</h1>
       </div>
       <div className="faculty-cont">
-     
         {facultycont.map((item) => {
           return (
-            <div data-aos="fade-up" data-aos-duration="3000" key={item.id} className="faculty-img-holder">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              key={item.id}
+              className="faculty-img-holder"
+            >
               <img src={item.img} alt={item.alt} />
               <center>
                 <h1>{item.alt}</h1>
@@ -67,7 +69,7 @@ const Team = () => {
           );
         })}
       </div>
-      <Teamweb />
+      <Teammem />
     </>
   );
 };

@@ -1,12 +1,10 @@
 import React, { useEffect } from "react";
 import "./Footer.css";
-
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { GoLocation } from "react-icons/go";
 import { BsTelephone } from "react-icons/bs";
-// import { IconContext } from "react-icons";
 import { FaUserTie } from "react-icons/fa";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -59,8 +57,6 @@ const Footer = () => {
 
         <div className="footer-below1">
           <h2>Be Social</h2>
-          {/* <h1>....</h1> */}
-
           <div className="social-media2">
             <div className="fb-holder">
               <a
@@ -105,7 +101,7 @@ const Footer = () => {
 
         <div className="footer-below2">
           <h1>Subscribe</h1>
-          
+
           <h3>Keep yourself updated. Subscribe to our newsletter</h3>
         </div>
       </div>

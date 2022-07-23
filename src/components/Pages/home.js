@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./home.css";
 import { TabTitle } from "../Utils/Genfn";
 import Hometop from "../Hometop";
-import { galleryimg } from "../Dataset";
+import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ReadMoreEmp from "../ReadMoreEmp";
@@ -21,23 +21,9 @@ const Home = () => {
         <Hometop />
       </div>
 
-      {/* <div data-aos="fade-down" className="home-gallery">
-        <h1>Gallery</h1>
-        <div className="img-gallery-cont">
-          {galleryimg.map((item) => {
-            return (
-              <div key={item.id} className="img-gallery">
-                <img src={item.img} alt={item.alt} />
-              </div>
-            );
-          })}
-        </div>
-      </div> */}
-
-
-        <div data-aos="flip-right" className="event-highlights">
-          <h1>Event Highlights</h1>
-        </div>
+      <div data-aos="flip-right" className="event-highlights">
+        <h1>Event Highlights</h1>
+      </div>
       <div className="srijan-re">
         <center>
           <img src="./img/EVENT__IMAGE.jpeg" alt="Event_image" />
@@ -56,7 +42,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div  className="srijan-re">
+      <div className="srijan-re">
         <center>
           <img src="./img/photO1.jpg" alt="Event_image" />
         </center>
@@ -72,7 +58,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div  className="srijan-re">
+      <div className="srijan-re">
         <center>
           <img src="./img/img-5.jpg" alt="Event_image" />
         </center>
@@ -87,7 +73,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div  className="srijan-re">
+      <div className="srijan-re">
         <center>
           <img
             src="./img/WhatsApp Image 2022-07-20 at 10.14.14 PM.jpeg"
@@ -103,6 +89,38 @@ const Home = () => {
           </p>
           <ReadMoreTech />
         </div>
+      </div>
+
+      <div className="gallery-cont">
+        <div className="gallery-cont-heading">
+          <h1>Gallery</h1>
+        </div>
+        <div className="gallery">
+          <div className="img-1">
+            <img src="./img/img-1.jpg" alt="" />
+          </div>
+          <div className="img-2">
+            <img src="./img/img-2.jpg" alt="" />
+          </div>
+          <div className="img-3">
+            <img src="./img/img-3.jpg" alt="" />
+          </div>
+          <div className="img-4">
+            <img src="./img/img-4.jpg" alt="" />
+          </div>
+          <div className="img-5">
+            <img src="./img/img-5.jpg" alt="" />
+          </div>
+          <div className="img-6">
+            <img src="./img/img-6.jpg" alt="" />
+          </div>
+          <div className="img-7">
+            <img src="./img/img-7.jpg" alt="" />
+          </div>
+        </div>
+        <Link className="linkgalllery" to={"/gallery"}>
+          <button className="hometogallerybtn">See More</button>
+        </Link>
       </div>
     </>
   );

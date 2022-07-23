@@ -1,19 +1,7 @@
 
-.footermain{
-    position:absolute;
-    bottom: 0;
-}
-.footer-icon{
-    background-color: var(--color-9-100);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-} 
 
 .footer-below{
     display: flex;
-    
     max-width: 100%;
     background-color: var(--color-20-100);
     display: flex;
@@ -21,18 +9,8 @@
     align-items: center;
     height: 14em;
 }
-.address ul{
-    padding-bottom: 0.4em;
-    color: white;
-    font-size: 1rem
-    
-}
-.phonenum ul{
-    padding-bottom: 0.4em;
-    color: white;
-    font-size: 1rem
-    
-}
+
+
 
 .footer-below1{
     display: flex;
@@ -120,144 +98,14 @@
     margin: 1rem 0;
 }
 
-.phonenum .address{
-    padding: 0.5rem;
-}
-.phonenum2{
-   
-    display: flex;
-    flex-direction: column;
 
-}
-.phonenum2 a{
- text-decoration: none;
- color: white;
- padding-bottom: .4rem;
-
-}
-.phonenum2 a:hover{
-    cursor: pointer;
-    
-}
-
-.icon-color8{
-    color: white;
-    
-}
-.icon-color8:hover {
-    color: red;
-}
-.icon-color9{
-    color: white;
-}
-.icon-color9:hover {
-   
-    color: #f09433;
-}
-.footer-btn-a,.footer-btn-b,.footer-btn-c,.footer-btn-d,.footer-btn-e{
-    
-    display: flex;
-    justify-content: center;
-    background-color: var(--color-10-100);
-    align-items: center;
-    margin: 0.4375rem;
-   
-    padding-left: 0%;
-    padding-right: 0%;
-   
-    border-radius: 0.25rem;
-    width: 2.1875rem;
-    height: 2.1875rem;
-    transition: all 0.3s ease 0s;
-
-}
-.footer-btn-a,.footer-btn-b,.footer-btn-c,.footer-btn-d,.footer-btn-e:hover{
-    cursor: pointer;
-}
-
-.icon-color-a,.icon-color-b,.icon-color-c,.icon-color-d,.icon-color-e{
-    padding-top: 0.125rem;
-    color: black;
-   
-}
-.footer-btn-a:hover .icon-color-a{
-    color: white;
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-a:hover{
-    background-color: #0072b1;
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-b:hover .icon-color-b{
-    color: white;
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-b:hover{
-    background-color: 	#4267B2;
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-c:hover .icon-color-c{
-    color: white;
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-c:hover{
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-d:hover .icon-color-d{
-    color: rgb(255, 0, 0);
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-d:hover{
-    background-color: 	#ffffff;
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-e:hover .icon-color-e{
-    color: rgb(251, 62, 62);
-    transition: all 0.3s ease 0s;
-}
-.footer-btn-e:hover{
-    background-color: 	#ffffff;
-    transition: all 0.3s ease 0s;
-}
 .footer-heading img{
     width: 8rem;
 }
 
-.address{
-    margin-left: 0.5rem;
-}
-.phonenum{
-    margin-left: 0.5rem;
-}
 
-
-
-.light-address{
-    color: #98a2ad !important;
-    font-weight: 600 !important;
-}
-.footer-phone:hover{
-    color: rgb(0, 0, 0) !important;
-}
-.footer-location:hover{
-    color: #000000 !important;
-}
 .footer-heading:hover{
     color:#ee0970 !important;
-}
-
-
-.footer-social{
-    text-align: center;
-    background-color: var(--color-20-100);
-}
-
-.footer-social h4{
-    font-size: 25px;
-    font-weight: 900;
-    font-family: var(--font5);
-    color: white;
 }
 
 
@@ -295,6 +143,7 @@
     margin: 0 0.5rem;
     color: var(--color-21-100);
 }
+
 .footer-adja h5{
     font-family: var(--font5);
     font-size: .75rem;
