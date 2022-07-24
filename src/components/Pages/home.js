@@ -9,7 +9,7 @@ import ReadMoreEmp from "../ReadMoreEmp";
 import ReadMoreSrijan from "../ReadMoreSrijan";
 import ReadMoreBech from "../ReadMoreBech";
 import ReadMoreTech from "../ReadMoreTech";
-
+import { galleryimg } from "../Dataset";
 const Home = () => {
   TabTitle("E-Cell");
   useEffect(() => {
@@ -95,32 +95,30 @@ const Home = () => {
         <div className="gallery-cont-heading">
           <h1>Gallery</h1>
         </div>
-        <div className="gallery">
-          <div className="img-1">
-            <img src="./img/img-1.jpg" alt="" />
-          </div>
-          <div className="img-2">
-            <img src="./img/img-2.jpg" alt="" />
-          </div>
-          <div className="img-3">
-            <img src="./img/img-3.jpg" alt="" />
-          </div>
-          <div className="img-4">
-            <img src="./img/img-4.jpg" alt="" />
-          </div>
-          <div className="img-5">
-            <img src="./img/img-5.jpg" alt="" />
-          </div>
-          <div className="img-6">
-            <img src="./img/img-6.jpg" alt="" />
-          </div>
-          <div className="img-7">
-            <img src="./img/img-7.jpg" alt="" />
+        <div className="slider">
+          <div className="slide-track">
+            {galleryimg.map((item) => {
+              return (
+                <div key={item.id} className="slide2">
+                  <img src={item.img} alt={item.alt} />
+                </div>
+              );
+            })}
+
+            {galleryimg.map((item) => {
+              return (
+                <div key={item.id} className="slide2">
+                  <img src={item.img} alt={item.alt} />
+                </div>
+              );
+            })}
           </div>
         </div>
-        <Link className="linkgalllery" to={"/gallery"}>
-          <button className="hometogallerybtn">See More</button>
-        </Link>
+        <div className="btn-gal-ho">
+          <Link className="linkgalllery" to={"/gallery"}>
+            <button className="hometogallerybtn">See More</button>
+          </Link>
+        </div>
       </div>
     </>
   );
