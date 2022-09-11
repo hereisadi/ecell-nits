@@ -38,6 +38,7 @@
         width: 100%;
         max-width: 500px;
         height: auto;
+        pointer-events: none;
 }
 
 .about-main-c h1{
@@ -96,7 +97,7 @@
     width: 19rem;
    border: 15px solid white;
     border-radius: 30px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s cubic-bezier(0.27, 0.49, 0.62, 1.47);
     position: relative;
     left: 20%;
     margin-top: 5vh;

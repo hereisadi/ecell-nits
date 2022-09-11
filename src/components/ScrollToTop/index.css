@@ -9,6 +9,7 @@
     color: #fff;
     z-index: 1;
     cursor: pointer;
+    border: solid 0.1vh white;
 }
 .scroll-to-top .icon{
     margin-top: 10px;

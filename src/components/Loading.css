@@ -13,6 +13,7 @@
 
   .loading-8 img{
     width: 10rem;
+    pointer-events: none;
   }
   .load-main{
     display: inline-block;
